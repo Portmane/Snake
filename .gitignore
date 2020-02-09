@@ -35,4 +35,3 @@ lerna-debug.log*
 
 
 # Mine
-src/config/typeorm.config.ts
