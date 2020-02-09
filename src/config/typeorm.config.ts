@@ -5,10 +5,10 @@ import {User} from "../auth/domain/user.entity";
 export const typeOrmConfig: TypeOrmModuleOptions = {
     type: "postgres",
     host: "localhost",
-    port: 1234,
+    port: "your port",
 
-    username: "postgres",
-    password: "Yf`,",
+    username: "your username",
+    password: "Your password",
 
     database: "snake",
     entities: [__dirname + "/../**/*.entity.ts", Task, User],
