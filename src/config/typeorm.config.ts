@@ -8,7 +8,7 @@ export const typeOrmConfig: TypeOrmModuleOptions = {
     port: "your port",
 
     username: "your username",
-    password: "Your password",
+    password: "your password",
 
     database: "snake",
     entities: [__dirname + "/../**/*.entity.ts", Task, User],
