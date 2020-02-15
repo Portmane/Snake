@@ -20,6 +20,6 @@ export class Task extends BaseEntity {
     @Column()
     userId: number;
 
-    @ManyToOne(type => User, user => user.tasks, {eager: false})
+    @ManyToOne(manyTasksToOfType => User, howDoUserReferenceOnAssignedUser => howDoUserReferenceOnAssignedUser.tasks, {eager: false})
     user: User;
 }
