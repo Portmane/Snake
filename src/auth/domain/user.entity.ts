@@ -18,7 +18,7 @@ export class User extends BaseEntity {
     @Column()
     salt: string;
 
-    @OneToMany(type => Task, task => task.user, {eager: true})
+    @OneToMany(oneUserToOfType => Task, howDoTaskReferenceOnAssignedUser => howDoTaskReferenceOnAssignedUser.user, {eager: true})
     tasks: Task[];
 
 
